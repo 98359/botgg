@@ -9,7 +9,7 @@ client.on('ready', () => {
   client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
 
-  if ( message.content.startsWith(prefix+ " say")) {
+  if ( message.content.startsWith(prefix+ "say")) {
     message.delete()
     const embed = new Discord.RichEmbed()
     .setDescription(args.join(" "))
@@ -57,7 +57,7 @@ if ( message.content.startsWith(prefix+ " ping")) {
    client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
   
-if ( message.content.startsWith(prefix+ "playning")) {
+if ( message.content.startsWith(prefix+ " playning")) {
     let embed = new Discord.RichEmbed()
             .setTitle('Playning on : ')
             .setDescription(` ${client.users.size} members`)
@@ -135,8 +135,8 @@ client.on('message', msg => {
   });
 
 client.on('message', msg => {
-    if (msg.content === '-help') {
-      msg.channel.send('`? Commands ?` , fineti invite , fineti support , fineti info , fineti say , fineti ping , fineti serverinfo , fineti playning ');
+    if (msg.content === 'fineti help') {
+      msg.channel.send('`? Commands ?` , fineti invite , fineti support , fineti info , finetisay , fineti ping , fineti serverinfo , fineti playning ');
     }
   });
 
