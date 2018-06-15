@@ -19,6 +19,23 @@ client.on('ready', () => {
 
 });
 
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+
+  if ( message.content.startsWith(prefix+ " help")) {
+    message.delete()
+    const embed = new Discord.RichEmbed()
+    .setTitle('BOT INFO')
+    .setDescription(`•prefix --> fineti
+
+BOT COMMANDS
+
+• || fineti server || fineti fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||`)
+    .setColor(0xFF000)
+   message.channel.sendEmbed(embed);
+  }
+
+});
 
 client.on('message', message => {
     if (message.author.id == '336880953723191298') {
@@ -131,12 +148,6 @@ client.on('message', msg => {
 client.on('message', msg => {
     if (msg.content === 'fineti info') {
       msg.channel.send('pentru welcome creaza un channel pe nume `welcome` :) ');
-    }
-  });
-
-client.on('message', msg => {
-    if (msg.content === 'fineti help') {
-      msg.channel.send('```fix BOT INFO •prefix --> fineti BOT COMMANDS • || fineti server || fineti fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||```');
     }
   });
 
