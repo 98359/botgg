@@ -125,7 +125,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content === '$support') {
-      msg.channel.send('support server ---> https://discord.gg/ur66nKC');
+      msg.channel.send('support server ---> https://discord.gg/VjZQFMM');
     }
   });
 
