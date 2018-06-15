@@ -137,13 +137,13 @@ client.on('message', msg => {
 client.on('message', msg => {
     if (msg.content === 'fineti help') {
       msg.channel.send('```fix 
-                       BOT INFO
+BOT INFO
 
-                       •prefix --> fineti
+ •prefix --> fineti
 
-                        BOT COMMANDS
+ BOT COMMANDS
 
-                        • || fineti server || fineti fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||```');
+• || fineti server || fineti fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||```');
     }
   });
 
