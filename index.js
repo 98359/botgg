@@ -23,14 +23,13 @@ client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
 
   if ( message.content.startsWith(prefix+ " help")) {
-    message.delete()
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
     .setDescription(`•prefix --> fineti
 
 BOT COMMANDS
 
-• || fineti server || fineti fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||`)
+• || fineti server || fineti fineti support || fineti info || finetisay || fineti ping ||       fineti serverinfo || fineti playing ||`)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
