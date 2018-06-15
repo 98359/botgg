@@ -22,10 +22,10 @@ client.on('ready', () => {
 client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
 
-  if ( message.content.startsWith(prefix+ " help")) {
+  if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> fineti
+    .setDescription(`•prefix -->
 
 BOT COMMANDS
 
