@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "fineti"
+const prefix = "$"
 
 client.on('ready', () => {
-  client.user.setGame('cu fineti ' , 'https://www.twitch.tv/lucasdavid913/')
+  client.user.setGame('in 421 guilds | Maintenance BOT ' , 'https://www.twitch.tv/lucasdavid913/')
 })   
 
   client.on('message', message =>{
@@ -25,11 +25,11 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix -->
+    .setDescription(`•prefix --> $
 
 BOT COMMANDS
 
-• || fineti server || fineti support || fineti info || finetisay || fineti ping || fineti serverinfo || fineti playing ||`)
+• || $mass || $support || $info || $say || $ping || $serverinfo || $restart || `)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
@@ -37,8 +37,8 @@ BOT COMMANDS
 });
 
 client.on('message', message => {
-    if (message.author.id == '336880953723191298') {
-    if (message.content.startsWith(`fineti restart`)) {
+    if (message.author.id == '451417009985421316') {
+    if (message.content.startsWith(`$restart`)) {
             resetBot(message.channel);
     }
   }
@@ -70,25 +70,10 @@ if ( message.content.startsWith(prefix+ " ping")) {
   
 });
 
-   client.on('message', message =>{
-  let args = message.content.split(" ").slice(1);
-  
-if ( message.content.startsWith(prefix+ " playning")) {
-    let embed = new Discord.RichEmbed()
-            .setTitle('Playning on : ')
-            .setDescription(` ${client.users.size} members`)
-            .setColor(0x4caf50)
-            .setTimestamp()
-        
-        message.channel.send(embed);
-  }
-  
-});
-
 client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
   
-if (message.content.startsWith(prefix + ' serverinfo')) {
+if (message.content.startsWith(prefix + 'serverinfo')) {
   const embed = new Discord.RichEmbed()
   embed.addField('Members', message.guild.memberCount, true)
   embed.addField('Name', message.guild.name, true)
@@ -119,9 +104,9 @@ client.on('message', message =>{
 });  
 
   client.on('message', message => {    
-    if(message.content.startsWith('fineti mass')) {
-    if(message.author.id === "336880953723191298" ||
-message.author.id === "336880953723191298"){
+    if(message.content.startsWith('$mass')) {
+    if(message.author.id === "451417009985421316" ||
+message.author.id === "451417009985421316"){
        let args = message.content.split(" ").slice(1);         
        var argresult = args.join(" ")      
 const argsresult = args.join(" ")         
@@ -133,25 +118,25 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === 'fineti invite') {
-      msg.channel.send('Invite **Fineti** https://discordapp.com/api/oauth2/authorize?client_id=457176698098810880&permissions=8&scope=bot  :tada:');
+    if (msg.content === '$invite') {
+      msg.channel.send('Invite **ShaderFighter** https://discordapp.com/api/oauth2/authorize?client_id=457226334746443787&permissions=8&scope=bot  :tada:');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === 'fineti support') {
-      msg.channel.send('support server ---> https://discord.gg/ur66nKC');
+    if (msg.content === '$support') {
+      msg.channel.send('support server ---> https://discord.gg/ur66nKC'');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === 'fineti info') {
-      msg.channel.send('pentru welcome creaza un channel pe nume `welcome` :) ');
+    if (msg.content === '$info') {
+      msg.channel.send('pentru welcome creaza un channel pe nume `📈welcome-goodbye📉` :) ');
     }
   });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
+    let channel = member.guild.channels.find('name', '📈welcome-goodbye📉');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
