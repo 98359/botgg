@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "$"
 
 client.on('ready', () => {
-  client.user.setGame('in 421 guilds | Maintenance BOT ' , 'https://www.twitch.tv/lucasdavid913/')
+  client.user.setGame('Discord Servers Romania | 430 Guilds ' , 'https://www.twitch.tv/lucasdavid913/')
 })   
 
   client.on('message', message =>{
