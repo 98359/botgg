@@ -103,6 +103,20 @@ client.on('message', message =>{
 
 });  
 
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+  
+if ( message.content.startsWith(prefix+ "avatar")) {
+    let embed = new Discord.RichEmbed()
+    .setAuthor(`${user.username}`)
+    .setImage(user.displayAvatarURL)
+    .setColor('RANDOM')
+    
+   message.channel.send(embed);
+  }
+
+});     
+    
   client.on('message', message => {    
     if(message.content.startsWith('f?mass')) {
     if(message.author.id === "419472407816830986" ||
