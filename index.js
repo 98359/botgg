@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "-"
 
 client.on('ready', () => {
-  client.user.setGame('f!help ' , `listening`)
+  client.user.setGame('f!help ')
 })   
 
   client.on('message', message =>{
