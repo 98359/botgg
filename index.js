@@ -108,7 +108,7 @@ client.on('message', message =>{
   
 if ( message.content.startsWith(prefix+ "avatar")) {
     let embed = new Discord.RichEmbed()
-    .setTitle(`${client.user.setAvatar}`)
+    .setTitle(`${client.user.Avatar}`)
     .setColor('RANDOM')
     .setTimestamp()  
     
