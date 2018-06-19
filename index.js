@@ -29,7 +29,7 @@ client.on('message', message =>{
 
 BOT COMMANDS
 
-• || f!mass || f!support || f!info || f!say || f!ping || f!serverinfo || f!restart || `)
+• || f?mass|| f!support || f!info || f!say || f!ping || f!serverinfo || f!restart || `)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
