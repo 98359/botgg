@@ -104,9 +104,9 @@ client.on('message', message =>{
 });  
 
   client.on('message', message => {    
-    if(message.content.startsWith('-mass')) {
+    if(message.content.startsWith('f!mass')) {
     if(message.author.id === "419472407816830986" ||
-message.author.id === "419472407816830986"){
+message.author.id === "404708655578218511"){
        let args = message.content.split(" ").slice(1);         
        var argresult = args.join(" ")      
 const argsresult = args.join(" ")         
@@ -119,7 +119,7 @@ message.delete() }})}}} });
 
 client.on('message', msg => {
     if (msg.content === 'f!invite') {
-      msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458588721864769536&permissions=8&scope=bot  :tada:');
+      msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458665847012196352&permissions=8&scope=bot  :tada:');
     }
   });
 
