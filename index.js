@@ -25,11 +25,11 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> f?
+    .setDescription(`•prefix --> f?/f!
 
 BOT COMMANDS
 
-• || f?mass|| f!support || f!info || f!say || f!ping || f!serverinfo || f!restart || `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || more commands f!help `)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
