@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-"
+const prefix = "f!"
 
 client.on('ready', () => {
   client.user.setGame('f!help ')
@@ -25,11 +25,11 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> -
+    .setDescription(`•prefix --> f!
 
 BOT COMMANDS
 
-• || -mass || -support || -info || -say || -ping || -serverinfo || -restart || `)
+• || f!mass || f!support || f!info || f!say || f!ping || f!serverinfo || f!restart || `)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
@@ -38,7 +38,8 @@ BOT COMMANDS
 
 client.on('message', message => {
     if (message.author.id == '246987920894984192') {
-    if (message.content.startsWith(`-restart`)) {
+    if (message.author.id == '419472407816830986') 
+    if (message.content.startsWith(`f!restart`)) {
             resetBot(message.channel);
     }
   }
