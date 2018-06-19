@@ -38,7 +38,6 @@ BOT COMMANDS
 
 client.on('message', message => {
     if (message.author.id == '419472407816830986') {
-    if (message.author.id == '404708655578218511') 
     if (message.content.startsWith(`f!restart`)) {
             resetBot(message.channel);
     }
@@ -106,8 +105,8 @@ client.on('message', message =>{
 
   client.on('message', message => {    
     if(message.content.startsWith('-mass')) {
-    if(message.author.id === "246987920894984192" ||
-message.author.id === "246987920894984192"){
+    if(message.author.id === "419472407816830986" ||
+message.author.id === "419472407816830986"){
        let args = message.content.split(" ").slice(1);         
        var argresult = args.join(" ")      
 const argsresult = args.join(" ")         
@@ -119,25 +118,25 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === '-invite') {
-      msg.channel.send('Invite **mGz** https://discordapp.com/oauth2/authorize?client_id=458588721864769536&permissions=8&scope=bot  :tada:');
+    if (msg.content === 'f!invite') {
+      msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458588721864769536&permissions=8&scope=bot  :tada:');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === '-support') {
+    if (msg.content === 'f!support') {
       msg.channel.send('support server ---> https://discord.gg/8SnarjU');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === '-info') {
-      msg.channel.send('creatorul meu este : <@419472407816830986> iar ownerul meu este : <@246987920894984192> ');
+    if (msg.content === 'f!info') {
+      msg.channel.send('creatorul meu este : <@419472407816830986> si <@404708655578218511> ');
     }
   });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome-bye');
+    let channel = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
@@ -151,7 +150,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', 'welcome-bye');
+    let channel = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
