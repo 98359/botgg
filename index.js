@@ -154,7 +154,7 @@ client.on('guildMemberRemove', member => {
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
-        .setColor('#FF000')
+        .setColor('#ff0000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
         .addField('✘ | Bye -', `La revedere , ne  vom revedea`)
