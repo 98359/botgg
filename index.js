@@ -25,8 +25,7 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`${member}
-•prefix --> f?/f!
+    .setDescription(`•prefix --> f?/f!
 
 BOT COMMANDS
 
