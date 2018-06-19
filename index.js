@@ -29,7 +29,7 @@ client.on('message', message =>{
 
 BOT COMMANDS
 
-• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || more commands f!help `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || more commands f!help `)
     .setColor(0xFF000)
    message.channel.sendEmbed(embed);
   }
@@ -102,21 +102,7 @@ client.on('message', message =>{
   }
 
 });  
-
-client.on('message', message =>{
-  let args = message.content.split(" ").slice(1);
-  
-if ( message.content.startsWith(prefix+ "avatar")) {
-    let embed = new Discord.RichEmbed()
-    .setDescription(`${client.user.avatarURL}`)
-    .setColor('RANDOM')
-    .setTimestamp()  
-    
-   message.channel.send(embed);
-  }
-
-});     
-    
+   
   client.on('message', message => {    
     if(message.content.startsWith('f?mass')) {
     if(message.author.id === "419472407816830986" ||
