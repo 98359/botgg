@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "f!"
+const prefix = "f?"
 
 client.on('ready', () => {
-  client.user.setGame('f!help ')
+  client.user.setGame('f!help/f?help ')
 })   
 
   client.on('message', message =>{
@@ -25,7 +25,7 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> f!
+    .setDescription(`•prefix --> f?
 
 BOT COMMANDS
 
@@ -38,7 +38,7 @@ BOT COMMANDS
 
 client.on('message', message => {
     if (message.author.id == '419472407816830986') {
-    if (message.content.startsWith(`f!restart`)) {
+    if (message.content.startsWith(`f?restart`)) {
             resetBot(message.channel);
     }
   }
@@ -104,7 +104,7 @@ client.on('message', message =>{
 });  
 
   client.on('message', message => {    
-    if(message.content.startsWith('f!mass')) {
+    if(message.content.startsWith('f?mass')) {
     if(message.author.id === "419472407816830986" ||
 message.author.id === "404708655578218511"){
        let args = message.content.split(" ").slice(1);         
@@ -124,13 +124,13 @@ client.on('message', msg => {
   });
 
 client.on('message', msg => {
-    if (msg.content === 'f!support') {
-      msg.channel.send('support server ---> https://discord.gg/8SnarjU');
+    if (msg.content === 'f?support') {
+      msg.channel.send('support server ---> https://discord.gg/GF3RWsd');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === 'f!info') {
+    if (msg.content === 'f?info') {
       msg.channel.send('creatorul meu este : <@419472407816830986> si <@404708655578218511> ');
     }
   });
