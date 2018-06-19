@@ -135,6 +135,21 @@ client.on('message', msg => {
     }
   });
 
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+
+  if ( message.content.startsWith(prefix+ "avatar")) {
+    message.delete()
+    let embed = new Discord.RichEmbed()
+    .setColor(0xFF000)
+    .setThumbnail(memberavatar)
+    .addField(`${member}`, 'your avatar is')
+    .setTimestamp()
+   message.channel.sendEmbed(embed);
+  }
+
+});
+
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
     let memberavatar = member.user.avatarURL
