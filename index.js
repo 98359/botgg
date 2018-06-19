@@ -13,7 +13,7 @@ client.on('ready', () => {
     message.delete()
     const embed = new Discord.RichEmbed()
     .setDescription(args.join(" "))
-    .setColor(0xFF000)
+    .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
 
@@ -30,7 +30,7 @@ client.on('message', message =>{
 BOT COMMANDS
 
 • || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || more commands f!help `)
-    .setColor(0xFF000)
+    .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
 
@@ -61,7 +61,7 @@ if ( message.content.startsWith(prefix+ "ping")) {
     let embed = new Discord.RichEmbed()
             .setTitle('Ping')
             .setDescription(`\`\`\`md\nPing :${client.ping}ms\`\`\``)
-            .setColor(0x4caf50)
+            .setColor('RANDOM')
             .setFooter('Bot pinged')
             .setTimestamp()
         
@@ -80,7 +80,7 @@ if (message.content.startsWith(prefix + 'serverinfo')) {
   embed.addField('Region', message.guild.region, true)
   embed.addField('Owner', message.guild.owner, true)
   embed.addField('ID', message.guild.id, true)
-  embed.setColor(`ff0000`)
+  embed.setColor('RANDOM')
   embed.setThumbnail(message.guild.iconURL)
   message.channel.sendEmbed(embed)
 }
@@ -94,7 +94,7 @@ client.on('message', message =>{
     message.delete()
     let embed = new Discord.RichEmbed()
             .setTitle('No Invite Link')
-            .setColor(0xff0000)
+            .setColor('RANDOM')
             .setFooter('No invite link!')
             .setTimestamp()
         
