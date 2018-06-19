@@ -140,10 +140,10 @@ client.on('message', message =>{
 
   if ( message.content.startsWith(prefix+ "avatar")) {
     message.delete()
-    let embed = new Discord.RichEmbed()
+    if embed = new Discord.RichEmbed()
     .setColor(0xFF000)
     .setThumbnail(memberavatar)
-    .addField(`${member}`, 'your avatar is')
+    .addTitle(`${member}`, 'your avatar is')
     .setTimestamp()
    message.channel.sendEmbed(embed);
   }
