@@ -30,7 +30,7 @@ client.on('message', message =>{
 
 BOT COMMANDS
 
-• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge ||  `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge || f?invite ||  `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
@@ -119,7 +119,7 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === 'f!invite') {
+    if (msg.content === 'f?invite') {
       msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458665847012196352&permissions=8&scope=bot  :tada:');
     }
   });
