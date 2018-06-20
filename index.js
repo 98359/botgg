@@ -25,11 +25,11 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> f?/f!
+    .setDescription(`•prefix --> f?
 
 BOT COMMANDS
 
-• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge || f?invite || f?8ball || `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge || f?invite || f?8ball || f?botinfo || `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
