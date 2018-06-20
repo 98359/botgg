@@ -89,6 +89,21 @@ if (message.content.startsWith(prefix + 'serverinfo')) {
 
 client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
+  
+if (message.content.startsWith(prefix + 'botinfo')) {
+  const embed = new Discord.RichEmbed()
+  embed.addField('Name', 'Flex', true)
+  embed.addField('Owner', '<@419472407816830986>', true)
+  embed.addField('ID', '458912845438910464', true)
+  embed.setColor('RANDOM')
+  embed.setThumbnail(message.guild.iconURL)
+  message.channel.sendEmbed(embed)
+}
+  
+});
+
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
 
   if ( message.content.startsWith("https://discord.gg")) {
     message.delete()
