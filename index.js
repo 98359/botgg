@@ -92,7 +92,7 @@ client.on('message', message =>{
   
 if (message.content.startsWith(prefix + 'botinfo')) {
   const embed = new Discord.RichEmbed()
-  embed.addTitle('BOT INFO')
+  embed.addField('BOT INFO')
   embed.addField('Name', 'Flex', true)
   embed.addField('Prefix', 'f?', true)
   embed.addField('Tag:', '6777', true)
