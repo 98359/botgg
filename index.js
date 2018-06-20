@@ -4,6 +4,7 @@ const prefix = "f?"
 
 client.on('ready', () => {
   client.user.setGame('f?help ')
+  	client.user.setStatus('idle');
 })   
 
   client.on('message', message =>{
