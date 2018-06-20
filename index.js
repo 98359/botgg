@@ -92,11 +92,16 @@ client.on('message', message =>{
   
 if (message.content.startsWith(prefix + 'botinfo')) {
   const embed = new Discord.RichEmbed()
+  embed.addTitle('BOT INFO')
   embed.addField('Name', 'Flex', true)
+  embed.addField('Prefix', 'f?', true)
+  embed.addField('Tag:', '6777', true)
+  embed.addField('Created at:', '2018-06-20 12:52:59.660000', true)
   embed.addField('Owner', '<@419472407816830986>', true)
+  embed.addField('Made with:', 'Node')
   embed.addField('ID', '458912845438910464', true)
   embed.setColor('RANDOM')
-  embed.setThumbnail(message.guild.iconURL)
+  embed.setThumbnail(client.AvatarURL)
   message.channel.sendEmbed(embed)
 }
   
