@@ -137,8 +137,10 @@ client.on('message', msg => {
   });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
-    let memberavatar = member.user.avatarURL
+    var joinrole = member.guild.roles.find('name', '[F]Member');
+    member.addRole(joinrole);
+    const joinchannel  = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
+    let memberavatar  = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
         .setColor('#FF000')
