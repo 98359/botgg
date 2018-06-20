@@ -145,7 +145,7 @@ client.on('guildMemberAdd', member => {
         .setColor('#FF000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Welcome', `Bine ai venit :flex: `)
+        .addField('✘ | Welcome', `Bine ai venit <a:flex:458662125771030571> `)
         .setTimestamp()
 
         channel.sendEmbed(embed);
