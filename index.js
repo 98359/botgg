@@ -30,7 +30,7 @@ client.on('message', message =>{
 
 BOT COMMANDS
 
-• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge || f?invite ||  `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge || f?invite || f?8ball || `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
