@@ -120,7 +120,7 @@ message.delete() }})}}} });
 
 client.on('message', msg => {
     if (msg.content === 'f?invite') {
-      msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458665847012196352&permissions=8&scope=bot  :tada:');
+      msg.channel.send('Invite **Flex** https://discordapp.com/oauth2/authorize?client_id=458912845438910464&permissions=8&scope=bot  :tada:');
     }
   });
 
