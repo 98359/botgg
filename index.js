@@ -101,7 +101,7 @@ if (message.content.startsWith(prefix + 'botinfo')) {
   embed.addField('Made with:', 'Node')
   embed.addField('ID', '458912845438910464', true)
   embed.setColor('RANDOM')
-  embed.setThumbnail(bot.guild.avatarURL)
+  embed.setThumbnail(message.guild.iconURL)
   message.channel.sendEmbed(embed)
 }
   
