@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "f?"
 
 client.on('ready', () => {
-  client.user.setGame('f!help/f?help ')
+  client.user.setGame('f?help ')
 })   
 
   client.on('message', message =>{
@@ -29,7 +29,7 @@ client.on('message', message =>{
 
 BOT COMMANDS
 
-• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || more commands f!help `)
+• || f?mass || f?support || f?info || f?say || f?ping || f?serverinfo || f?restart || f?avatar || f?purge ||  `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
