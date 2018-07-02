@@ -4,7 +4,6 @@ const prefix = "f?"
 
 client.on('ready', () => {
   client.user.setGame('f?help/f.help ', 'https://www.twitch.tv/lucasdavid913')
-  client.user.setGame('Updating Comming soon... ', 'https://www.twitch.tv/lucasdavid913')
 })   
 
   client.on('message', message =>{
