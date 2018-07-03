@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "f?"
 
 client.on('ready', () => {
-  client.user.setGame('f?help/f.help ', 'https://www.twitch.tv/lucasdavid913')
+  client.user.setGame('f?help/f.help|empero-flex.ml ', 'https://www.twitch.tv/lucasdavid913')
 })   
 
   client.on('message', message =>{
@@ -107,6 +107,20 @@ if (message.content.startsWith(prefix + 'botinfo')) {
   
 });
 
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+  
+if (message.content.startsWith(prefix + 'virus')) {
+  const embed = new Discord.RichEmbed()
+  embed.addField('Virus')
+  embed.addField('loading....', '<a:LOADING:463652782478721024>', true)
+  embed.setColor('RANDOM')
+  embed.setThumbnail(message.guild.iconURL)
+  message.channel.sendEmbed(embed)
+}
+  
+});
+<a:LOADING:463652782478721024>
 client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
 
