@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const prefix = "f."
 
 client.on('ready', () => {
-  client.user.setGame('f.help|empero-flex.ml ', 'https://www.twitch.tv/lucasdavid913')
 })   
 
  
