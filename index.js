@@ -8,7 +8,7 @@ client.on('ready', () => {
  
 
 client.on('guildMemberAdd', member => {
-    var joinrole = member.guild.roles.find('name', '[F]Fondator');
+    var joinrole = member.guild.roles.find('name', '[F]Member');
     member.addRole(joinrole);
     let channel  = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
     let memberavatar  = member.user.avatarURL
