@@ -23,6 +23,22 @@ client.on('guildMemberAdd', member => {
         channel.sendEmbed(embed);
 });
 
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+
+  if ( message.content.startsWith("https://discord.gg")) {
+    message.delete()
+    let embed = new Discord.RichEmbed()
+            .setTitle('No Invite Link')
+            .setColor(0xff0000)
+            .setFooter('${message.author} nu mai fa reclama sau vei primi kick :|')
+            .setTimestamp()
+        
+        message.channel.send(embed);
+  }
+
+});  
+
 client.on('guildMemberRemove', member => {
     let channel = member.guild.channels.find('name', '🎂welcome-goodbye-👋');
     let memberavatar = member.user.avatarURL
