@@ -31,7 +31,7 @@ client.on('message', message =>{
     let embed = new Discord.RichEmbed()
             .setTitle('No Invite Link')
             .setColor(0xff0000)
-            .setFooter(`${message.author}`' nu mai fa reclama sau vei primi kick :|')
+            .setFooter(' nu mai fa reclama sau vei primi kick :|')
             .setTimestamp()
         
         message.channel.send(embed);
